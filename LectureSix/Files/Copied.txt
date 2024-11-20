@@ -1,0 +1,12 @@
+Welcome to File Operations in C#!
+This file contains sample text to demonstrate reading and writing functionality.
+Feel free to modify its content or use it as a template for your practice.
+
+Here are some topics you might explore:
+1. Reading this file line by line.
+2. Writing new content to this file.
+3. Appending additional data to this file.
+4. Using stream readers and writers for efficient operations.
+
+Have fun learning C#!
+- Your Friendly Developer
