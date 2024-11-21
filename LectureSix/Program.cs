@@ -37,29 +37,34 @@ class Program
         }
 
         using (
-            var binary = new BinaryWriter(
-                File.Open(path + @"\Binary.txt", FileMode.Create, FileAccess.Write)
+            var writer = new BinaryWriter(
+                File.Open(path + @"\Binary.bin", FileMode.Create, FileAccess.Write)
             )
         )
         {
-            binary.Write(1225);
-            binary.Write("1225");
-            binary.Write(1225.422);
+            writer.Write(1225);
+            writer.Write("1225");
+            writer.Write(1225.422);
+        }
+
+        using (var reader = new BinaryReader(File.Open(path + @"\Binary.bin", FileMode.Open)))
+        {
+            var number = reader.ReadInt32();
+            var message = reader.ReadString();
+            var pi = reader.ReadDouble();
+
+            Console.WriteLine($"Read int: {number}");
+            Console.WriteLine($"Read double: {pi}");
+            Console.WriteLine($"Read string: {message}");
         }
 
         //------------------------------------------------------------------------------------------------------------//
 
-        using (
-            FileStream fs = new FileStream(
-                path + @"\PartThree.txt",
-                FileMode.Create,
-                FileAccess.Write
-            )
-        )
+        using (var fs = new FileStream(path + @"\PartThree.txt", FileMode.Create, FileAccess.Write))
         {
-            using (StreamWriter writer = new StreamWriter(fs, Encoding.UTF8, 8192))
+            using (var writer = new StreamWriter(fs, Encoding.UTF8, 8192))
             {
-                for (int i = 0; i < 1000; i++)
+                for (var i = 0; i < 1000; i++)
                 {
                     writer.WriteLine($"This is line {i + 1}");
                 }
