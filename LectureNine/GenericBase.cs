@@ -29,8 +29,8 @@ public class GenericBase<T>
         var result = default(T);
         var count = 0;
 
-        if (input is null)
-            throw new NullReferenceException("Cannot look for matches to null");
+        if (IsNull(input))
+            throw new Exception("Cannot look for matches to NULL");
 
         foreach (var item in List)
         {
@@ -42,7 +42,7 @@ public class GenericBase<T>
         }
 
         if (count > 1)
-            throw new WarningException("More than one matches found!");
+            throw new Exception("More than one matches found!");
 
         if (count is 0)
             return default;
@@ -52,12 +52,17 @@ public class GenericBase<T>
 
     public bool Exists(T input)
     {
-        if (input is null)
-            throw new NullReferenceException("Cannot look for matches to null");
+        if (IsNull(input))
+            throw new Exception("Input is NULL");
 
         if (List.Contains(input))
             return true;
 
         return false;
+    }
+
+    private bool IsNull(T input)
+    {
+        return input is null;
     }
 }
