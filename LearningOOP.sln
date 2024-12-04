@@ -24,6 +24,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LectureEleven", "LectureEle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LectureTwelve", "LectureTwelve\LectureTwelve.csproj", "{5B8D7683-7C2C-4247-BFA3-4502A6EB1ADA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LectureThirteen", "LectureThirteen\LectureThirteen.csproj", "{B9E36976-CCD4-4070-9954-05FFCB1AA0B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LectureFourteen", "LectureFourteen\LectureFourteen.csproj", "{F7448E0D-6E15-460A-834C-02707DE646B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +82,14 @@ Global
 		{5B8D7683-7C2C-4247-BFA3-4502A6EB1ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B8D7683-7C2C-4247-BFA3-4502A6EB1ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B8D7683-7C2C-4247-BFA3-4502A6EB1ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E36976-CCD4-4070-9954-05FFCB1AA0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E36976-CCD4-4070-9954-05FFCB1AA0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E36976-CCD4-4070-9954-05FFCB1AA0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E36976-CCD4-4070-9954-05FFCB1AA0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7448E0D-6E15-460A-834C-02707DE646B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7448E0D-6E15-460A-834C-02707DE646B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7448E0D-6E15-460A-834C-02707DE646B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7448E0D-6E15-460A-834C-02707DE646B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
